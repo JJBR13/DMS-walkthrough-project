@@ -22,11 +22,11 @@
         <nav class="light-blue darken-1">
             <div class="nav-wrapper">
                 <a href="{{ url_for('home') }}" class="brand-logo">Task Manager</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bar"></i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('home') }}">Home</a></li>
                     <li><a href="">New Task</a></li>
-                    <li><a href="{{ url_for('home') }}">Catorgories</a></li>
+                    <li><a href="{{ url_for('categories') }}">Catorgories</a></li>
                 </ul>
             </div>
         </nav>
@@ -35,7 +35,7 @@
         <ul class="sidenav" id="mobile-demo">
             <li><a href="{{ url_for('home') }}">Home</a></li>
             <li><a href="">New Task</a></li>
-            <li><a href="">Catorgories</a></li>
+            <li><a href="{{ url_for('categories') }}">Catorgories</a></li>
         </ul>
 
     </header>
